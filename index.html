@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="card">
+    <picture>
+      <source media="(min-width:1024px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+      <img class="img" src="./assets/images/illustration-sign-up-mobile.svg">
+    </picture>
+    <div class="container">
+      <div class="text-container">
+        <h1>
+          Stay updated!
+        </h1>
+          <p>
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+        <div class="checkboxes">
+          <div class="checkbox">
+            <img src="./assets/images/icon-list.svg" alt="">
+            <p>
+              Product discovery and building what matters
+            </p>
+          </div>
+          <div class="checkbox">
+            <img src="./assets/images/icon-list.svg" alt="">
+            <p>
+              Measuring to ensure updates are a success
+            </p>
+          </div>
+          <div class="checkbox">
+            <img src="./assets/images/icon-list.svg" alt="">
+            <p>
+              And much more!
+            </p>
+          </div>
+        </div>
+      </div>
+      <form id="form" action="/success.html" novalidate>
+        <div id="labels">
+          <label for="email">Email address</label>
+          <p id="error">Valid email required</p>
+        </div>
+        <input required id="email" name="email" type="email" placeholder="email@company.com">
+        <button id="submit" type="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+  </div>
+  <div id="successCard">
+    <div class="message">
+    <img src="./assets/images/icon-success.svg" alt="">
+    <h1>
+        Thanks for subscribing!
+    </h1>
+    <p>
+        A confirmation email has been sent to <b id="userEmail">ash@loremcompany.com</b>. Please open it and click the button inside to confirm your subscription.
+    </p>
+</div>
+<button id="resetBtn">
+Dismiss message
+</button>
+</div>
+  
+</body>
+<script src="./index.js"></script>
+</html>
