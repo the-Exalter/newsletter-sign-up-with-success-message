@@ -12,13 +12,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="card">
-    <picture>
+  <div id="card" class="card" role="article">
+    <picture role="img">
       <source media="(min-width:1024px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
-      <img class="img" src="./assets/images/illustration-sign-up-mobile.svg">
+      <img class="img" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration">
     </picture>
-    <div class="container">
-      <div class="text-container">
+    <div class="container" role="contentinfo">
+      <div class="text-container" role="text">
         <h1>
           Stay updated!
         </h1>
@@ -46,8 +46,8 @@
           </div>
         </div>
       </div>
-      <form id="form" action="/success.html" novalidate>
-        <div id="labels">
+      <form id="form" action="/success.html" novalidate role="form">
+        <div id="labels" class="labels">
           <label for="email">Email address</label>
           <p id="error">Valid email required</p>
         </div>
@@ -56,7 +56,7 @@
       </form>
     </div>
   </div>
-  <div id="successCard">
+  <div id="successCard" class="successCard" role="article">
     <div class="message">
     <img src="./assets/images/icon-success.svg" alt="">
     <h1>
@@ -66,7 +66,7 @@
         A confirmation email has been sent to <b id="userEmail">ash@loremcompany.com</b>. Please open it and click the button inside to confirm your subscription.
     </p>
 </div>
-<button id="resetBtn">
+<button id="resetBtn" type="reset">
 Dismiss message
 </button>
 </div>

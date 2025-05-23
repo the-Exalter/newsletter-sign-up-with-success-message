@@ -24,7 +24,10 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--Blue800);
 }
-#card {
+h1 {
+    font-size: clamp(2.5rem, 1.786rem + 1.905vw, 3.5rem);
+}
+.card {
     background: var(--White);
     display: flex;
     flex-direction: column;
@@ -78,7 +81,6 @@ input {
 }
 input:focus + button {
     background: linear-gradient(90deg, #FF6A3A 0%, #FF527B 100%);
-    outline: linear-gradient(90deg, #FF6A3A 0%, #FF527B 100%);
     box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
 }
 input:user-invalid {
@@ -104,12 +106,12 @@ button:hover {
     box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
 }
 
-#labels p {
+.labels p {
     display: none;
     font-weight: 700;
     color: var(--Red);
 }
-#labels {
+.labels {
     display: flex;
     justify-content: space-between;
     font-size: small;
@@ -120,7 +122,7 @@ button:hover {
 
 
 /*-----------------Success Page---------------------*/
-#successCard {
+.successCard {
     background: var(--White);
     padding: 9.313em 1.5em 4.375em;
     height: 70vh;
@@ -128,9 +130,9 @@ button:hover {
     flex-direction: column;
     justify-content: space-between;
 }
-#successCard img {
-    height: 64px;
-    width: 64px;
+.successCard img {
+    height: 4em;
+    width: 4em;
 }
 .message {
     display: flex;
@@ -138,17 +140,19 @@ button:hover {
     gap: 1.5em;
 }
 
-@media screen and (min-width: 431px) {
+@media screen and (min-width: 26.9375em) {
     body {
-        background-color: var(--Blue800);
+        background-color: var(--Blue700);
     }
-    #card {
+    .card {
         margin: 0 auto;
         margin-top: 2.5em;
         border-radius: 2.25em;
         padding: var(--spacing-40);
+        height: 36.0625em;
+        width: 52.5em;
     }
-    #successCard {
+    .successCard {
         padding: 4em;
         border-radius: 2.25em;
         height: 26.5em;
@@ -157,9 +161,6 @@ button:hover {
         /* justify-content: space-around; */
         margin: 0 auto;
         margin-top: 6.5em;
-    }
-    h1 {
-        font-size: 56px;
     }
     .img {
         border-radius: 1em;
@@ -171,13 +172,13 @@ button:hover {
         font-size: 1em;
     }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
     body {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    #card {
+    .card {
         flex-direction: row-reverse;
         border-radius: 2.25em;
         padding: 2em;
