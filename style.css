@@ -22,7 +22,7 @@
 body {
     background: var(--White);
     font-family: "Roboto", sans-serif;
-    color: var(--Blue800);
+    color: var(--Blue700);
 }
 #card {
     background: var(--White);
@@ -144,7 +144,7 @@ button:hover {
     }
     #card {
         margin: 0 auto;
-        margin-top: 2.5em;
+        margin-top: 3.5em;
         border-radius: 2.25em;
         padding: var(--spacing-40);
     }
